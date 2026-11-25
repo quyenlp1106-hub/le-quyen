@@ -1,0 +1,624 @@
+<title>Lê Phương Quyên · Tổ chức & Nhân sự</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap">
+<style>
+/* Layout: trang một cột 1120px, chữ đen trên nền trắng, đỏ chỉ dùng cho con số & điểm nhấn. Overview (hero + timeline + thế mạnh + logo) đọc lướt được; kinh nghiệm & dự án thu/xổ. */
+:root{
+  --bg:#FFFFFF; --paper:#F4F4F4; --ink:#111111; --ink-2:#3A3A3A; --muted:#6E6E6E; --line:#E2E2E2;
+  --red:#D7261E; --red-soft:#FBE9E8; --on-red:#FFFFFF; --bar:#CFCFCF; --logo-bg:#FFFFFF;
+  --f:"Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0F0F0F; --paper:#1A1A1A; --ink:#F2F2F2; --ink-2:#CFCFCF; --muted:#9A9A9A; --line:#2C2C2C;
+  --red:#FF4B3E; --red-soft:#2A1513; --on-red:#0F0F0F; --bar:#4A4A4A; --logo-bg:#F2F2F2; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0F0F0F; --paper:#1A1A1A; --ink:#F2F2F2; --ink-2:#CFCFCF; --muted:#9A9A9A; --line:#2C2C2C;
+  --red:#FF4B3E; --red-soft:#2A1513; --on-red:#0F0F0F; --bar:#4A4A4A; --logo-bg:#F2F2F2; color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.65 var(--f);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:1120px;margin:0 auto}
+h1,h2,h3,h4{margin:0;line-height:1.15;text-wrap:balance}
+p{margin:0;text-wrap:pretty}
+a{color:var(--red)}
+img{display:block;max-width:100%}
+:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+.num,.tab{font-variant-numeric:tabular-nums}
+.red{color:var(--red)}
+.label{font:600 .74rem/1.3 var(--f);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+
+/* Section header */
+section{padding-block:64px;border-top:1px solid var(--ink)}
+.sh{display:grid;grid-template-columns:72px minmax(0,1fr);gap:8px 20px;margin-bottom:36px;align-items:baseline}
+.sh .no{font:800 2.4rem/1 var(--f);color:var(--red);font-variant-numeric:tabular-nums}
+.sh h2{font:800 clamp(1.7rem,3.6vw,2.6rem)/1.1 var(--f);letter-spacing:-.02em}
+.sh p{grid-column:2;color:var(--ink-2);max-width:66ch}
+.sec>summary.sh{list-style:none;cursor:pointer;grid-template-columns:72px minmax(0,1fr) auto;margin-bottom:0}
+.sec>summary.sh::-webkit-details-marker{display:none}
+.sec>summary.sh:hover h2{color:var(--red)}
+.sec[open]>summary.sh{margin-bottom:36px}
+.tog{grid-column:3;grid-row:1 / span 2;align-self:start;display:grid;justify-items:center;gap:6px}
+.tog .hint{font-size:.72rem;color:var(--muted);white-space:nowrap}
+.sec .tog .pm{width:44px;height:44px}
+@media (max-width:600px){.sh{grid-template-columns:1fr}.sh p{grid-column:1}.sec>summary.sh{grid-template-columns:minmax(0,1fr) auto}.sec>summary.sh .no{grid-column:1}.sec>summary.sh h2,.sec>summary.sh p{grid-column:1}.tog{grid-column:2;grid-row:1 / span 3}}
+
+/* Top bar */
+.top{position:sticky;top:0;z-index:50;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 24px;padding-block:14px;font-size:.88rem;isolation:isolate}
+.top::before{content:"";position:absolute;top:0;bottom:0;left:calc(50% - 50vw);right:calc(50% - 50vw);background:var(--bg);border-bottom:1px solid var(--line);z-index:-1}
+html,body{overflow-x:clip}
+.top nav a.on{color:var(--red);font-weight:600}
+section,.contact{scroll-margin-top:72px}
+@media (max-width:640px){.top nav{overflow-x:auto;flex-wrap:nowrap;width:100%;scrollbar-width:none}.top nav a{white-space:nowrap}}
+.top b{font-weight:800;letter-spacing:.02em}
+.top nav{display:flex;flex-wrap:wrap;gap:4px 18px}
+.top nav a{color:var(--ink-2);text-decoration:none}
+.top nav a:hover{color:var(--red)}
+
+/* Hero */
+.hero{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:48px;padding-block:28px 56px;align-items:stretch}
+.hero>div{align-self:center}
+.hero .label{color:var(--red)}
+.hero h1{font:900 clamp(2.6rem,7vw,5rem)/.98 var(--f);letter-spacing:-.035em;margin-top:14px}
+.hero .say{font:600 clamp(1.2rem,2.3vw,1.5rem)/1.4 var(--f);margin-top:22px;max-width:30ch}
+.hero .say em{font-style:normal;background:linear-gradient(transparent 62%,var(--red-soft) 62%)}
+.hero .pos{color:var(--ink-2);margin-top:14px;max-width:58ch}
+.pillars{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.pillars span{border:1px solid var(--ink);border-radius:999px;padding:5px 13px;font-size:.86rem;font-weight:500}
+.photo{position:relative}
+.photo img{width:100%;height:100%;aspect-ratio:1/1;object-fit:cover;object-position:50% 30%;border-radius:4px}
+.photo::after{content:"";position:absolute;right:-12px;bottom:-12px;width:42%;height:30%;background:var(--red);z-index:-1;border-radius:4px}
+.photo{z-index:0}
+.photo figcaption{position:absolute;left:12px;bottom:12px;background:var(--bg);padding:6px 12px;font-size:.8rem;font-weight:600;border-radius:3px}
+@media (max-width:820px){.hero{grid-template-columns:1fr}.photo{max-width:440px}}
+
+/* Stat strip */
+.stats{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));border-top:3px solid var(--ink);border-bottom:1px solid var(--line);margin-bottom:8px}
+.stats>div{padding:18px 16px 18px 0;display:grid;gap:4px;align-content:start}
+.stats>div+div{padding-left:16px;border-left:1px solid var(--line)}
+.stats .big{white-space:nowrap;font:800 clamp(1.35rem,2.3vw,2rem)/1 var(--f);color:var(--red);font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.stats p{font-size:.86rem;color:var(--ink-2);line-height:1.45}
+.stats small{font-size:.74rem;color:var(--muted)}
+@media (max-width:980px){.stats{grid-template-columns:repeat(3,minmax(0,1fr))}.stats>div{border-left:0!important;padding-left:0!important;border-top:1px solid var(--line)}.stats>div:not(:nth-child(3n+1)){padding-left:16px!important;border-left:1px solid var(--line)!important}}
+@media (max-width:560px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.stats>div:not(:nth-child(3n+1)){padding-left:0!important;border-left:0!important}.stats>div:nth-child(even){padding-left:16px!important;border-left:1px solid var(--line)!important}}
+
+/* Timeline */
+.tl{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));position:relative}
+.tl::before{content:"";position:absolute;left:0;right:0;top:27px;height:2px;background:var(--ink)}
+.stage{position:relative;padding-right:18px;display:grid;gap:8px;align-content:start}
+.stage .ico{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;font-size:1.5rem;background:var(--bg);border:2px solid var(--ink);position:relative;overflow:hidden}
+.stage .ico.logo{width:96px;height:56px;border:0;border-radius:0;background:var(--bg);overflow:visible;justify-items:start}
+.stage .ico img{max-width:100%;max-height:56px;width:auto;height:auto;object-fit:contain;filter:none}
+.stage.now .ico{background:var(--red);border-color:var(--red)}
+.stage .yr{font:700 .85rem var(--f);color:var(--red);font-variant-numeric:tabular-nums;margin-top:6px}
+.stage h3{font:800 1.05rem/1.25 var(--f)}
+.stage .role{font-size:.85rem;font-weight:600;color:var(--ink-2)}
+.stage p{font-size:.86rem;color:var(--muted);line-height:1.5}
+@media (max-width:860px){.tl{grid-template-columns:1fr;gap:22px}.tl::before{left:47px;right:auto;top:0;bottom:0;width:2px;height:auto}.stage{grid-template-columns:96px minmax(0,1fr);column-gap:16px;padding:0}.stage .ico:not(.logo){margin-left:20px}.stage .ico{grid-row:span 4}.stage .yr{margin-top:0}}
+.edu{margin-top:40px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.edu div{background:var(--paper);padding:16px 18px;border-radius:4px;display:grid;gap:4px;align-content:start}
+.edu b{font-size:.95rem}
+.edu span{font-size:.85rem;color:var(--muted)}
+@media (max-width:760px){.edu{grid-template-columns:1fr}}
+
+/* Strengths */
+.sk{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.sk article{background:var(--bg);padding:22px 20px;display:grid;gap:8px;align-content:start}
+.sk article.core{background:var(--paper)}
+.sk .em{font-size:1.6rem;line-height:1}
+.sk h3{font:700 1.05rem/1.3 var(--f)}
+.sk h3 small{display:block;font-weight:500;font-size:.78rem;color:var(--muted);margin-top:2px}
+.sk p{font-size:.9rem;color:var(--ink-2);line-height:1.55}
+.sk .ev{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+.sk .ev span{font-size:.74rem;font-weight:600;padding:2px 9px;border-radius:999px;background:var(--bg);border:1px solid var(--line)}
+.sk .tag{justify-self:start;font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--on-red);background:var(--red);padding:2px 8px;border-radius:2px}
+@media (max-width:900px){.sk{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.sk{grid-template-columns:1fr}}
+
+/* Logos */
+.logos{display:grid;gap:22px}
+.lrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.lg{height:92px;border:1px solid var(--line);border-radius:4px;display:grid;place-items:center;padding:12px;text-align:center;background:var(--bg)}
+.lg img{max-height:60px;width:auto;object-fit:contain;filter:grayscale(1);transition:filter .25s;background:var(--logo-bg);border-radius:3px;padding:2px}
+.lg:hover img{filter:none}
+.lg span{font:800 .95rem/1.2 var(--f);letter-spacing:-.01em;color:var(--ink-2)}
+.lg span small{display:block;font-weight:500;font-size:.7rem;color:var(--muted);letter-spacing:0}
+
+/* Toolbar */
+.tools{display:flex;justify-content:flex-end;gap:8px;margin:-16px 0 18px}
+.tbtn{font:600 .82rem var(--f);background:var(--bg);color:var(--ink);border:1px solid var(--ink);border-radius:999px;padding:6px 14px;cursor:pointer}
+.tbtn:hover{background:var(--ink);color:var(--bg)}
+
+/* Company accordion */
+.co{border-top:1px solid var(--line)}
+.co:last-child{border-bottom:1px solid var(--line)}
+.co>summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:110px minmax(0,1fr) 40px;gap:18px;align-items:center;padding:22px 0}
+.co>summary::-webkit-details-marker{display:none}
+.co .mark{height:72px;display:grid;place-items:center;font-size:2rem}
+.co .mark img{max-height:72px;max-width:100%;width:auto;object-fit:contain}
+.co .who{display:grid;gap:3px;min-width:0}
+.co .who .when{font-size:.8rem;font-weight:600;color:var(--red);font-variant-numeric:tabular-nums}
+.co .who h3{font:800 1.3rem/1.2 var(--f)}
+.co .who span{font-size:.9rem;color:var(--ink-2)}
+.co .kpi{text-align:right;display:grid;gap:2px}
+.co .kpi b{font:800 1.7rem/1 var(--f);color:var(--red);font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.co .kpi small{font-size:.76rem;color:var(--muted);max-width:18ch;justify-self:end;line-height:1.35}
+.pm{width:36px;height:36px;border-radius:50%;border:1.5px solid var(--ink);position:relative;justify-self:end}
+.pm::before,.pm::after{content:"";position:absolute;left:50%;top:50%;width:14px;height:2px;background:var(--ink);transform:translate(-50%,-50%);transition:transform .2s}
+.pm::after{transform:translate(-50%,-50%) rotate(90deg)}
+details[open]>summary .pm{background:var(--ink)}
+details[open]>summary .pm::before{background:var(--bg)}
+details[open]>summary .pm::after{transform:translate(-50%,-50%) rotate(0);background:var(--bg)}
+@media (max-width:720px){.co>summary{grid-template-columns:64px minmax(0,1fr) 36px;gap:14px}.co .mark{height:56px;font-size:1.5rem}.co .mark img{max-height:56px}}
+
+.body{padding:4px 0 36px;display:grid;gap:26px}
+.ctx{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px;align-items:start}
+.ctx p{color:var(--ink-2);font-size:.95rem}
+.ctx .q{border-left:3px solid var(--red);padding-left:14px;font-weight:600;color:var(--ink)}
+@media (max-width:720px){.ctx{grid-template-columns:1fr}}
+
+/* Task → Result rows */
+.tr{display:grid;gap:0}
+.tr .row{display:grid;grid-template-columns:150px minmax(0,1fr) 28px minmax(0,1fr);gap:14px;padding:16px 0;border-top:1px dashed var(--line);align-items:start}
+.tr .row:first-child{border-top:0}
+.tr .area{font-weight:700;font-size:.95rem;display:flex;gap:8px;align-items:flex-start}
+.tr .task{font-size:.92rem;color:var(--ink-2)}
+.tr .arr{color:var(--red);font-weight:800;text-align:center}
+.tr .res{font-size:.92rem;font-weight:600}
+.tr .res .hl{color:var(--red)}
+.tr .head{border-top:0;padding-bottom:4px}
+.tr .head span{font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+@media (max-width:760px){.tr .row{grid-template-columns:1fr;gap:4px}.tr .arr{display:none}.tr .head{display:none}.tr .res::before{content:"→ ";color:var(--red)}}
+
+/* Visuals grid */
+.viz{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.viz.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.card{background:var(--paper);border-radius:4px;padding:18px;display:grid;gap:10px;align-content:start;min-width:0}
+.card h4{font:700 .82rem/1.3 var(--f);letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.card .note{font-size:.78rem;color:var(--muted)}
+@media (max-width:860px){.viz,.viz.two{grid-template-columns:1fr}}
+
+/* Bars */
+.bars{display:grid;gap:9px}
+.bar{display:grid;grid-template-columns:118px minmax(0,1fr) 54px;gap:10px;align-items:center;font-size:.82rem}
+.bar .t{height:14px;background:var(--bg);border-radius:2px;overflow:hidden}
+.bar .t i{display:block;height:100%;background:var(--bar)}
+.bar.hot .t i{background:var(--red)}
+.bar b{text-align:right;font-variant-numeric:tabular-nums}
+.bar.hot b{color:var(--red)}
+
+/* Big number */
+.bn{font:800 2.6rem/1 var(--f);color:var(--red);letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.bn small{font-size:1rem;color:var(--ink);font-weight:700;letter-spacing:0}
+
+/* Donut */
+.donut{display:flex;gap:16px;align-items:center}
+.donut .d{width:92px;height:92px;border-radius:50%;flex:none;display:grid;place-items:center;position:relative}
+.donut .d::after{content:"";position:absolute;inset:16px;border-radius:50%;background:var(--paper)}
+.donut .d b{position:relative;z-index:1;font:800 1.15rem var(--f);font-variant-numeric:tabular-nums}
+.donut p{font-size:.86rem;color:var(--ink-2)}
+
+/* 3P stack */
+.p3{display:grid;gap:6px}
+.p3 div{display:grid;grid-template-columns:44px minmax(0,1fr);gap:10px;align-items:center;padding:10px 12px;border-radius:3px;font-size:.85rem}
+.p3 b{font-weight:800}
+.p3 .a{background:var(--ink);color:var(--bg)}
+.p3 .b{background:var(--bar);color:var(--ink)}
+.p3 .c{background:var(--red);color:var(--on-red)}
+
+/* Chips */
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips span{font-size:.8rem;font-weight:600;padding:4px 10px;border-radius:999px;background:var(--bg);border:1px solid var(--line)}
+.chips span.r{border-color:var(--red);color:var(--red)}
+
+/* Photos */
+.ph{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.ph figure{margin:0;display:grid;gap:6px;min-width:0}
+.ph img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:4px}
+.ph img.tall{object-position:top}
+.ph figcaption{font-size:.78rem;color:var(--muted)}
+@media (max-width:560px){.ph{grid-template-columns:1fr}}
+
+/* Featured project */
+.feat{border:2px solid var(--ink);border-radius:4px;padding:0 22px}
+.feat>summary{border-bottom:0}
+.feat .co-badge{font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;background:var(--red);color:var(--on-red);padding:2px 8px;border-radius:2px;justify-self:start}
+
+/* Small projects */
+.mini{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:22px}
+.mini article{border:1px solid var(--line);border-radius:4px;overflow:hidden;display:grid;grid-template-rows:auto 1fr;background:var(--bg)}
+.mini .pic{aspect-ratio:16/9;background:var(--paper);display:grid;place-items:center;font-size:2rem;overflow:hidden;position:relative}
+.mini .pic img{width:100%;height:100%;object-fit:cover}
+.mini .pic.logo img{position:absolute;inset:0;margin:auto;width:auto;height:auto;max-width:70%;max-height:78%;object-fit:contain;border-radius:4px}
+.mini .txt{padding:16px;display:grid;gap:6px;align-content:start}
+.mini .txt .when{font-size:.76rem;font-weight:700;color:var(--red)}
+.mini h3{font:700 1rem/1.3 var(--f)}
+.mini p{font-size:.86rem;color:var(--ink-2)}
+@media (max-width:860px){.mini{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:540px){.mini{grid-template-columns:1fr}}
+
+/* Value + steps */
+.val{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.val div{background:var(--bg);padding:22px 18px;display:grid;gap:8px;align-content:start}
+.val .em{font-size:1.6rem}
+.val b{font-size:1rem;line-height:1.35}
+@media (max-width:860px){.val{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:480px){.val{grid-template-columns:1fr}}
+.steps{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:28px}
+.steps span{background:var(--ink);color:var(--bg);font-weight:600;font-size:.92rem;padding:10px 16px;border-radius:999px}
+.steps i{font-style:normal;color:var(--red);font-weight:800}
+.goal{margin-top:16px;font:700 clamp(1.15rem,2.4vw,1.45rem)/1.4 var(--f)}
+.goal span{color:var(--red)}
+
+/* Contact */
+.contact{background:var(--ink);color:var(--bg);border-radius:4px;padding:40px clamp(20px,4vw,48px);display:grid;gap:20px;margin-block:64px}
+.contact h2{font:800 clamp(1.7rem,4vw,2.6rem)/1.15 var(--f);letter-spacing:-.02em;max-width:22ch}
+.contact h2 span{color:var(--red)}
+.contact p{opacity:.8;max-width:60ch}
+.cc{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.cc div{border:1px solid color-mix(in srgb,var(--bg) 25%,transparent);border-radius:4px;padding:14px 16px;display:grid;gap:6px;min-width:0}
+.cc small{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;opacity:.7}
+.cc .v{font-weight:600;overflow-wrap:anywhere;user-select:all}
+.cc a{color:var(--bg)}
+.copy{justify-self:start;font:600 .78rem var(--f);background:var(--red);color:var(--on-red);border:0;border-radius:999px;padding:5px 12px;cursor:pointer}
+@media (max-width:620px){.cc{grid-template-columns:1fr}}
+footer{padding-block:0 40px;font-size:.82rem;color:var(--muted)}
+
+/* Built areas (PATI) */
+.built{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px}
+.built div{background:var(--paper);border-radius:4px;padding:14px 10px;display:grid;gap:6px;justify-items:center;text-align:center;font-size:.82rem;font-weight:600;line-height:1.3}
+.built div span{font-size:1.4rem}
+@media (max-width:860px){.built{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media (max-width:480px){.built{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.gloss{font-size:.82rem;color:var(--muted);font-weight:400}
+
+/* Modules */
+.mods{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 18px;counter-reset:m}
+.mods li{counter-increment:m;display:grid;grid-template-columns:30px minmax(0,1fr);gap:8px;align-items:start;font-size:.88rem;line-height:1.45}
+.mods li::before{content:counter(m);width:26px;height:26px;border-radius:50%;background:var(--red);color:var(--on-red);font-weight:800;font-size:.8rem;display:grid;place-items:center}
+@media (max-width:620px){.mods{grid-template-columns:1fr}}
+.viz.wide{grid-template-columns:minmax(0,2fr) minmax(0,1fr)}
+@media (max-width:860px){.viz.wide{grid-template-columns:1fr}}
+
+/* Gallery + logo strip */
+.gal{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:200px;gap:10px}
+.gal figure{margin:0;position:relative;overflow:hidden;border-radius:4px;background:var(--paper)}
+.gal figure.big{grid-column:span 2;grid-row:span 2}
+.gal img{width:100%;height:100%;object-fit:cover}
+.gal figcaption{position:absolute;left:8px;bottom:8px;background:var(--bg);color:var(--ink);font-size:.74rem;font-weight:600;padding:3px 9px;border-radius:3px}
+@media (max-width:760px){.gal{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:160px}}
+.lstrip{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:10px;margin-top:28px}
+.lstrip div{height:96px;border:1px solid var(--line);border-radius:4px;display:grid;place-items:center;padding:10px;background:var(--logo-bg)}
+.lstrip img{max-height:72px;max-width:100%;width:auto;object-fit:contain}
+.lstrip .more{background:var(--paper);border-style:dashed;font:800 2rem/1 var(--f);color:var(--red)}
+@media (max-width:760px){.lstrip{grid-template-columns:repeat(4,minmax(0,1fr))}}
+</style>
+
+<div class="wrap">
+
+<div class="top">
+  <b>LÊ PHƯƠNG QUYÊN</b>
+  <nav aria-label="Mục lục">
+    <a href="#hanh-trinh">Hành trình</a><a href="#the-manh">Thế mạnh</a><a href="#kinh-nghiem">Kinh nghiệm</a><a href="#du-an">Dự án</a><a href="#dong-hanh">Đồng hành</a><a href="#hinh-anh">Hình ảnh</a><a href="#lien-he">Liên hệ</a>
+  </nav>
+</div>
+
+<!-- 00 · HERO -->
+<header class="hero">
+  <div>
+    <div class="label">Tư vấn · Coaching · Mentor về Tổ chức &amp; Nhân sự</div>
+    <h1>Lê Phương<br>Quyên</h1>
+    <p class="say">Xây hệ thống Nhân sự cho công ty đang tăng trưởng nóng, <em>từ 0 lên 1</em>.</p>
+    <p class="pos">Thiết kế tổ chức · tuyển dụng &amp; phát triển nhân tài · hệ thống đãi ngộ · văn hoá doanh nghiệp &amp; đào tạo nội bộ. Đồng hành cùng SME &amp; Startup xây từ 0 lên 1 hệ thống nhân sự.</p>
+    <div class="pillars">
+      <span>Talent Acquisition</span><span>Employer Branding</span><span>Total Rewards</span><span>Learning &amp; Development</span><span>Culture &amp; Organization</span>
+    </div>
+  </div>
+  <figure class="photo">
+    <img src="assets/avatar.jpg" alt="Chân dung Lê Phương Quyên" width="800" height="800">
+  </figure>
+</header>
+
+<div class="stats" role="list" aria-label="Con số nổi bật">
+  <div role="listitem"><span class="big">14 năm</span><p>thực chiến với doanh nghiệp</p></div>
+  <div role="listitem"><span class="big">7 năm</span><p>ở vai trò quản lý</p></div>
+  <div role="listitem"><span class="big">3.000</span><p>freelancer vào cộng đồng được xây trong 1 tuần</p></div>
+  <div role="listitem"><span class="big">6 module</span><p>chuyên đề nâng cấp năng lực từ Recruiter thành Talent Acquisition</p></div>
+  <div role="listitem"><span class="big">15 triệu</span><p>view kênh TikTok tuyển dụng trong 3 tháng đầu</p></div>
+  <div role="listitem"><span class="big">0 đồng</span><p>chi phí tuyển dụng &amp; xây thương hiệu tuyển dụng</p></div>
+</div>
+
+<!-- 01 · TIMELINE -->
+<section id="hanh-trinh"><details class="sec">
+  <summary class="sh"><span class="no">01</span><h2>14 năm, 5 chặng</h2><p>Bắt đầu từ kết nối nguồn nhân lực với doanh nghiệp đến thực chiến tại các doanh nghiệp đang trong giai đoạn tăng trưởng, từ Tuyển dụng lên toàn bộ chức năng Nhân sự. Kinh nghiệm đúc kết từ hành trình xây, thử – sai – sửa, bắt đầu từ 0 lên 1, lên x10.</p><span class="tog"><span class="pm" aria-hidden="true"></span><small class="hint">Click để xem</small></span></summary>
+  <div class="secbody">  <div class="tl">
+    <div class="stage"><span class="ico logo"><img src="assets/logo-agu.png" alt="Trường Đại học An Giang"></span><span class="yr">2013 – 2019</span><h3>Trường Đại học An Giang</h3><span class="role">Quan hệ Doanh nghiệp &amp; Hỗ trợ Sinh viên</span><p>Kết nối &amp; làm việc với doanh nghiệp, đào tạo kỹ năng nghề nghiệp, tổ chức sự kiện 10.000+ người.</p></div>
+    <div class="stage"><span class="ico logo"><img src="assets/logo-datxanh.png" alt="Đất Xanh Miền Nam"></span><span class="yr">2019 – 2020</span><h3>Đất Xanh Miền Nam</h3><span class="role">Quản lý Thương hiệu Tuyển dụng</span><p>Xây dựng &amp; phát triển thương hiệu tuyển dụng từ con số 0.</p></div>
+    <div class="stage"><span class="ico logo"><img src="assets/logo-haitrieu.png" alt="Đồng Hồ Hải Triều"></span><span class="yr">2020 – 01/2025</span><h3>Đồng Hồ Hải Triều</h3><span class="role">Trưởng phòng Tuyển dụng</span><p>Xây phòng Tuyển dụng từ 0 cho chuỗi bán lẻ cao cấp đang tăng trưởng nóng.</p></div>
+    <div class="stage"><span class="ico logo"><img src="assets/logo-pati.png" alt="PATI Group"></span><span class="yr">04/2025 – 11/2026</span><h3>PATI Group</h3><span class="role">Head of People</span><p>Dựng &amp; vận hành toàn bộ phòng Nhân sự, thành viên Ban Quản trị, xây văn hoá AI First.</p></div>
+    <div class="stage now"><span class="ico" aria-hidden="true">🧭</span><span class="yr">2025 – nay</span><h3>Tư vấn doanh nghiệp</h3><span class="role">Tư vấn · Coaching · Mentor</span><p>Chẩn đoán, thiết kế giải pháp, đào tạo đội Nhân sự của doanh nghiệp.</p></div>
+  </div>
+  <div class="edu">
+    <div><span class="label">Học vấn</span><b>Thạc sĩ Lý luận &amp; Phương pháp dạy học</b><span>ĐH Sư phạm Huế. Nền tảng để thiết kế chương trình &amp; đứng lớp.</span></div>
+    <div><span class="label">Học vấn</span><b>Cử nhân Văn học</b><span>ĐH Khoa học Xã hội &amp; Nhân văn TP.HCM</span></div>
+    <div><span class="label">Đào tạo</span><b>Quản trị Chiến lược Nhân sự<br>&amp; Agentic Vibe Working</b><span>Chương trình đào tạo chuỗi của Neurons AI</span></div>
+  </div>
+</div></details></section>
+
+<!-- 02 · STRENGTHS -->
+<section id="the-manh"><details class="sec">
+  <summary class="sh"><span class="no">02</span><h2>Thế mạnh</h2><span class="tog"><span class="pm" aria-hidden="true"></span><small class="hint">Click để xem</small></span></summary>
+  <div class="secbody">  <div class="sk">
+    <article><span class="em" aria-hidden="true">🏗️</span><h3>Phát triển tổ chức<small>Organization Development</small></h3><p>Thiết kế cấu trúc, cách phối hợp &amp; văn hoá để công ty chạy đúng mô hình kinh doanh (Business Model) &amp; chuỗi giá trị (Value Chain).</p><div class="ev"><span>PATI</span></div></article>
+    <article><span class="em" aria-hidden="true">🎯</span><h3>Tuyển dụng<small>Talent Acquisition</small></h3><p>Xây hệ thống &amp; quy trình để tìm và chọn đúng người, đúng việc.</p><div class="ev"><span>Hải Triều</span><span>PATI</span><span>Khách hàng DN</span></div></article>
+    <article><span class="em" aria-hidden="true">📣</span><h3>Thương hiệu tuyển dụng<small>Employer Branding</small></h3><p>Người giỏi tự tìm đến, người tài chọn ở lại.</p><div class="ev"><span>Hải Triều</span><span>Đất Xanh</span></div></article>
+    <article><span class="em" aria-hidden="true">💰</span><h3>Lương thưởng &amp; Phúc lợi<small>C&amp;B · Total Rewards</small></h3><p>Trả lương công bằng, đãi ngộ gắn với hiệu quả, chi phí vẫn kiểm soát được.</p><div class="ev"><span>Hải Triều</span><span>PATI</span></div></article>
+    <article><span class="em" aria-hidden="true">📚</span><h3>Đào tạo &amp; Phát triển<small>Learning &amp; Development</small></h3><p>Thiết kế chương trình nội bộ &amp; trực tiếp đứng lớp về văn hoá, tư duy, kỹ năng làm việc.</p><div class="ev"><span>PATI</span><span>Hải Triều</span><span>Khách hàng DN</span></div></article>
+    <article><span class="em" aria-hidden="true">📏</span><h3>Khung năng lực &amp; Quản trị hiệu suất</h3><p>Phương pháp &amp; hệ thống đánh giá bằng tiêu chuẩn khớp văn hoá &amp; chiến lược của doanh nghiệp.</p><div class="ev"><span>PATI</span></div></article>
+    <article><span class="em" aria-hidden="true">❤️</span><h3>Văn hoá doanh nghiệp</h3><p>Gọi tên hệ giá trị &amp; hành vi của tổ chức, rồi đưa vào vận hành hằng ngày.</p><div class="ev"><span>PATI</span><span>Hải Triều</span></div></article>
+    <article><span class="em" aria-hidden="true">⚖️</span><h3>Quan hệ lao động &amp; Tái cấu trúc</h3><p>Thay đổi tổ chức đúng luật, giữ được người ở lại, tinh giản bộ máy cho khớp thực tế.</p><div class="ev"><span>PATI</span></div></article>
+    <article><span class="em" aria-hidden="true">🤖</span><h3>AI trong vận hành Nhân sự</h3><p>Đưa AI vào việc hằng ngày, đo được từng người, xây văn hoá AI First.</p><div class="ev"><span>PATI</span><span>Khách hàng DN</span></div></article>
+  </div>
+</div></details></section>
+
+<!-- 03 · EXPERIENCE -->
+<section id="kinh-nghiem"><details class="sec">
+  <summary class="sh"><span class="no">03</span><h2>Kinh nghiệm: nhiệm vụ &amp; kết quả</h2><p>Bấm <b>+</b> để xem chi tiết từng công ty.</p><span class="tog"><span class="pm" aria-hidden="true"></span><small class="hint">Click để xem</small></span></summary>
+  <div class="secbody">  <div class="tools"><button class="tbtn" type="button" id="openAll">Mở tất cả</button><button class="tbtn" type="button" id="closeAll">Thu tất cả</button></div>
+
+  <!-- PATI -->
+  <details class="co" open>
+    <summary>
+      <span class="mark"><img src="assets/logo-pati.png" alt=""></span>
+      <span class="who"><span class="when">04/2025 – 11/2026 · Head of People</span><h3>PATI Group</h3><span>DTC E-commerce Global, thị trường Mỹ &amp; châu Âu</span></span>
+      <span class="pm" aria-hidden="true"></span>
+    </summary>
+    <div class="body">
+      <div class="ctx">
+        <p>Công ty DTC E-commerce, dưới 30 nhân sự. Báo cáo trực tiếp CEO, thành viên Ban Quản trị, quản lý Team People &amp; Culture 3 người.</p>
+        <p class="q">Công ty tăng trưởng nóng, chú trọng văn hoá, định hướng AI First, làm việc theo chuẩn Global.</p>
+      </div>
+      <div class="card"><h4>Thiết lập &amp; vận hành toàn bộ chức năng phòng Nhân sự</h4>
+        <div class="built">
+          <div><span aria-hidden="true">💰</span>Đãi ngộ</div>
+          <div><span aria-hidden="true">📏</span>Khung năng lực</div>
+          <div><span aria-hidden="true">🎯</span>Tuyển dụng</div>
+          <div><span aria-hidden="true">📚</span>Đào tạo</div>
+          <div><span aria-hidden="true">❤️</span>Văn hoá</div>
+          <div><span aria-hidden="true">⚖️</span>Cấu trúc</div>
+          <div><span aria-hidden="true">🤖</span>AI</div>
+        </div></div>
+      <div class="tr">
+        <div class="row head"><span>Mảng</span><span>Nhiệm vụ</span><span></span><span>Kết quả</span></div>
+        <div class="row"><span class="area">💰 Đãi ngộ</span><span class="task">Thiết kế hệ thống lương 3P: P1 trả cho vị trí, P2 trả theo KPI tháng, P3 chia thành quả khi công ty đạt mốc doanh thu.</span><span class="arr">→</span><span class="res">Thu nhập nhân sự tăng mà <span class="hl">chi phí cố định không tăng</span>.</span></div>
+        <div class="row"><span class="area">📏 Khung năng lực</span><span class="task">Xây khung lương, khung năng lực toàn tổ chức &amp; khung riêng cho lãnh đạo; định nghĩa chuẩn nhân tài 5 Mindset Builder.</span><span class="arr">→</span><span class="res">Một chuẩn dùng xuyên suốt: tuyển dụng, đánh giá 30-60-90 ngày, đánh giá hiệu suất, thăng tiến. Bộ đánh giá lãnh đạo theo <span class="hl">5 cấp độ</span>.</span></div>
+        <div class="row"><span class="area">🎯 Tuyển dụng</span><span class="task">Tự xây kênh nguồn &amp; tự động hoá; tự thiết kế bài test đánh giá ứng viên theo chuẩn của công ty: "80 in 8", AI Fluency <span class="gloss">(mức thành thạo dùng AI)</span>.</span><span class="arr">→</span><span class="res"><span class="hl">60 nhân sự</span> trong 19 tháng, lấp vị trí trong 30–45 ngày, <span class="hl">0 đồng</span> mua tin tuyển dụng.</span></div>
+        <div class="row"><span class="area">🌐 Cộng đồng &amp; chương trình tuyển dụng đặc biệt</span><span class="task">Xây cộng đồng freelancer edit video. Thiết kế &amp; triển khai các chương trình tuyển dụng nhân tài Top Tier <span class="gloss">(nhóm ứng viên xuất sắc nhất)</span>.</span><span class="arr">→</span><span class="res">Cộng đồng <span class="hl">3.000 freelancer</span> trong 1 tuần. 3 chương trình: <span class="hl">Thủ Khoa · Alpha Tech · AI Builder</span>.</span></div>
+        <div class="row"><span class="area">📚 Đào tạo</span><span class="task">Thiết kế mô hình đào tạo theo thang Bloom <span class="gloss">(đo mức học từ nhớ, hiểu đến vận dụng, sáng tạo)</span>; lớp Culture Learning, AI Academy.</span><span class="arr">→</span><span class="res">Hình thành DNA của PATI-ers: <span class="hl">Integrity · Mindset Builder · Self Learning &amp; Discipline</span>.</span></div>
+        <div class="row"><span class="area">❤️ Văn hoá</span><span class="task">Xây hệ giá trị Integrity <span class="gloss">(chính trực)</span>; đứng lớp Culture Learning cho toàn nhân sự.</span><span class="arr">→</span><span class="res">Điểm lý thuyết từ <span class="hl">dưới 50%</span> lên chạm trần <span class="hl">92–95%</span> &amp; chuyển sang học bằng tình huống thật mỗi tuần.</span></div>
+        <div class="row"><span class="area">⚖️ Cấu trúc</span><span class="task">Tái cấu trúc đội ngũ khi chuyển sang AI First, làm đủ thủ tục theo luật.</span><span class="arr">→</span><span class="res">Tinh giản <span class="hl">30 → 10 nhân sự</span>, hiệu suất &amp; tăng trưởng giữ nguyên.</span></div>
+        <div class="row"><span class="area">🤖 AI</span><span class="task">Đưa AI vào việc hằng ngày; công cụ AI tuyển dụng trên Lark Base; AI agent trợ lý vận hành.</span><span class="arr">→</span><span class="res"><span class="hl">100%</span> nhân sự dùng AI hằng ngày, đo theo từng người.</span></div>
+      </div>
+    </div>
+  </details>
+
+  <!-- HẢI TRIỀU -->
+  <details class="co">
+    <summary>
+      <span class="mark"><img src="assets/logo-haitrieu.png" alt=""></span>
+      <span class="who"><span class="when">2020 – 01/2025 · Trưởng phòng Tuyển dụng</span><h3>Đồng Hồ Hải Triều</h3><span>Chuỗi đồng hồ &amp; mắt kính thời trang cao cấp, 350+ nhân sự toàn quốc</span></span>
+      <span class="pm" aria-hidden="true"></span>
+    </summary>
+    <div class="body">
+      <div class="ctx">
+        <p>Quản lý 2 nhân sự, báo cáo Ban Giám đốc. Hải Triều nay có hơn 30 chi nhánh.</p>
+        <p class="q">Năm 2020, Hải Triều có 10 chi nhánh chạy riêng lẻ như 10 hộ kinh doanh, chưa có phòng Nhân sự. Bắt đầu xây phòng Tuyển dụng từ con số 0.</p>
+      </div>
+      <div class="viz">
+        <div class="card"><h4>Tăng trưởng 2020 → 2024</h4>
+          <div class="bars">
+            <div class="bar"><span>Chi nhánh 2020</span><span class="t"><i style="width:29%"></i></span><b>10</b></div>
+            <div class="bar hot"><span>Chi nhánh 2024</span><span class="t"><i style="width:86%"></i></span><b>30+</b></div>
+            <div class="bar"><span>Nhân sự 2020</span><span class="t"><i style="width:57%"></i></span><b>~200</b></div>
+            <div class="bar hot"><span>Nhân sự 2024</span><span class="t"><i style="width:100%"></i></span><b>350+</b></div>
+          </div></div>
+        <div class="card"><h4>Trải nghiệm ứng viên</h4>
+          <div class="donut"><span class="d" style="background:conic-gradient(var(--red) 0 90%,var(--bar) 90% 100%)"><b>90%</b></span><p>ứng viên đi hết quy trình tuyển dụng</p></div>
+          <div class="donut"><span class="d" style="background:conic-gradient(var(--red) 0 95%,var(--bar) 95% 100%)"><b>95%</b></span><p>ứng viên hài lòng sau khi ứng tuyển</p></div></div>
+        <div class="card"><h4>Điểm hài lòng nhân viên</h4>
+          <div class="bars">
+            <div class="bar"><span>Trước</span><span class="t"><i style="width:70%"></i></span><b>7.0</b></div>
+            <div class="bar hot"><span>Sau 1 năm</span><span class="t"><i style="width:90%"></i></span><b>9.0</b></div>
+          </div>
+          <p class="note">Thang 10. 95% nhân viên tham gia chương trình nội bộ.</p>
+          <span class="bn">250 <small>đôi mắt trẻ em</small></span><p class="note">Dự án "Cùng Hải Triều bảo trợ đôi mắt cho em", 5 kỳ</p></div>
+      </div>
+      <div class="tr">
+        <div class="row head"><span>Mảng</span><span>Nhiệm vụ</span><span></span><span>Kết quả</span></div>
+        <div class="row"><span class="area">🎯 Hệ thống tuyển dụng</span><span class="task">Xây từ 0 quy trình, bộ tiêu chí, báo cáo chỉ số định kỳ; quản trị đội theo OKRs (mục tiêu &amp; kết quả then chốt).</span><span class="arr">→</span><span class="res">Đáp ứng <span class="hl">95% nhu cầu/năm</span>, đúng hạn mọi vị trí; <span class="hl">20–30 nhân sự/tháng</span> cho Showroom, Văn phòng – Vận hành, Bảo dưỡng.</span></div>
+        <div class="row"><span class="area">🤝 Trải nghiệm ứng viên</span><span class="task">Thiết kế hành trình &amp; kịch bản chăm sóc ứng viên.</span><span class="arr">→</span><span class="res"><span class="hl">90%</span> đi hết quy trình, <span class="hl">95%</span> hài lòng; ứng viên bỏ lịch phỏng vấn giảm mạnh.</span></div>
+        <div class="row"><span class="area">📣 Thương hiệu tuyển dụng</span><span class="task">Xây kênh TikTok "Hải Triều Career" &amp; Fanpage tuyển dụng; tự đứng host.</span><span class="arr">→</span><span class="res">TikTok <span class="hl">15 triệu view</span> trong 3 tháng đầu, 40.000+ follower, 1 triệu+ view/tháng. Fanpage 11.000 follower.</span></div>
+        <div class="row"><span class="area">❤️ Gắn kết</span><span class="task">Cùng Ban Điều hành rà soát lương thưởng, đánh giá; làm chương trình nội bộ.</span><span class="arr">→</span><span class="res">Điểm hài lòng <span class="hl">7.0 → 9.0</span> trong 1 năm; 95% tham gia chương trình nội bộ.</span></div>
+        <div class="row"><span class="area">📚 Đào tạo</span><span class="task">Đứng lớp Onboarding, Kỹ năng giao tiếp, Kỹ năng tuyển dụng &amp; phỏng vấn cho Leader.</span><span class="arr">→</span><span class="res">Tự thiết kế nội dung &amp; trực tiếp đứng lớp.</span></div>
+        <div class="row"><span class="area">🌱 Thiện nguyện</span><span class="task">Sáng lập dự án "Cùng Hải Triều bảo trợ đôi mắt cho em".</span><span class="arr">→</span><span class="res"><span class="hl">5 kỳ, 250 đôi mắt</span> trẻ em được bảo trợ.</span></div>
+      </div>
+      <div class="ph">
+        <figure><img class="tall" src="assets/tiktok-mobile.jpg" alt="Kênh TikTok Hải Triều Career trên điện thoại"><figcaption>Kênh TikTok "Hải Triều Career"</figcaption></figure>
+        <figure><img src="assets/mc.jpg" alt="Quyên dẫn Bản tin Hải Triều tháng 11" style="object-position:30% 50%"><figcaption>Dẫn Bản tin nội bộ Hải Triều</figcaption></figure>
+        <figure><img src="assets/charity.jpg" alt="Đoàn thiện nguyện Hải Triều trước Làng Thiếu niên Thủ Đức"><figcaption>"Cùng Hải Triều bảo trợ đôi mắt cho em"</figcaption></figure>
+      </div>
+    </div>
+  </details>
+
+  <!-- ĐẤT XANH -->
+  <details class="co">
+    <summary>
+      <span class="mark"><img src="assets/logo-datxanh.png" alt=""></span>
+      <span class="who"><span class="when">2019 – 2020 · Quản lý Thương hiệu Tuyển dụng</span><h3>Đất Xanh Miền Nam</h3><span>Thành viên Tập đoàn Đất Xanh, 500+ nhân sự, 2 công ty con</span></span>
+      <span class="pm" aria-hidden="true"></span>
+    </summary>
+    <div class="body">
+      <div class="ctx"><p class="q">Xây các kênh truyền thông tuyển dụng từ chưa có gì: Fanpage, Website, sự kiện liên kết với trường đại học.</p><p>Thông điệp định vị: "Cùng ĐXMN khẳng định và phát triển sự nghiệp".</p></div>
+      <div class="viz">
+        <div class="card"><h4>Nguồn ứng viên</h4><div class="donut"><span class="d" style="background:conic-gradient(var(--red) 0 33.3%,var(--bar) 33.3% 100%)"><b>1/3</b></span><p>ứng viên đến từ kênh truyền thông tự xây</p></div></div>
+        <div class="card"><h4>Fanpage trong 3 tháng</h4><div class="bars"><div class="bar"><span>Bắt đầu</span><span class="t"><i style="width:30%"></i></span><b>300</b></div><div class="bar hot"><span>Sau 3 tháng</span><span class="t"><i style="width:100%"></i></span><b>1.000</b></div></div><p class="note">Like tự nhiên, không chạy quảng cáo.</p></div>
+        <div class="card"><h4>Tuyển dụng &amp; trường học</h4><span class="bn">10+ <small>trường hợp tác</small></span><p style="font-size:.86rem">Mass sale <b>30 người/tháng</b> · back office <b>3 người/tháng</b></p></div>
+      </div>
+      <div class="tr">
+        <div class="row head"><span>Mảng</span><span>Nhiệm vụ</span><span></span><span>Kết quả</span></div>
+        <div class="row"><span class="area">📣 Thương hiệu (80%)</span><span class="task">Xây chiến lược, định vị thông điệp; Fanpage, website, Facebook – Zalo – Email.</span><span class="arr">→</span><span class="res"><span class="hl">1/3 ứng viên</span> đến từ kênh tự xây; Fanpage <span class="hl">300 → 1.000</span> like trong 3 tháng.</span></div>
+        <div class="row"><span class="area">🎓 Quan hệ trường học</span><span class="task">Kết nối trường đại học, cao đẳng.</span><span class="arr">→</span><span class="res">Hợp tác <span class="hl">10+ trường</span>.</span></div>
+        <div class="row"><span class="area">🎯 Tuyển dụng (20%)</span><span class="task">Lập kế hoạch, tuyển &amp; đào tạo hội nhập.</span><span class="arr">→</span><span class="res">Mass sale 30 người/tháng, back office 3 người/tháng.</span></div>
+      </div>
+    </div>
+  </details>
+
+  <!-- AN GIANG -->
+  <details class="co">
+    <summary>
+      <span class="mark"><img src="assets/logo-agu.png" alt=""></span>
+      <span class="who"><span class="when">2013 – 2019 · Quan hệ Doanh nghiệp &amp; Hỗ trợ Sinh viên</span><h3>Trường Đại học An Giang</h3><span>Đại học công lập lớn ở ĐBSCL, 12.000+ sinh viên mỗi năm</span></span>
+      <span class="pm" aria-hidden="true"></span>
+    </summary>
+    <div class="body">
+      <div class="viz">
+        <div class="card"><h4>Đầu ra sinh viên</h4><div class="donut"><span class="d" style="background:conic-gradient(var(--red) 0 90%,var(--bar) 90% 100%)"><b>90%</b></span><p>sinh viên ra trường có việc làm, cùng <b>50+ doanh nghiệp</b> đối tác</p></div>
+          <div class="chips"><span>🏦 Ngân hàng</span><span>📡 Viễn thông</span><span>🌾 Nông nghiệp</span><span>🛎️ Dịch vụ</span><span>🛒 Kinh doanh</span></div></div>
+        <div class="card"><h4>Sự kiện 10.000+ người/kỳ</h4>
+          <div class="bars">
+            <div class="bar hot"><span>Job Fair</span><span class="t"><i style="width:100%"></i></span><b>6 kỳ</b></div>
+            <div class="bar"><span>Ngày hội SV</span><span class="t"><i style="width:67%"></i></span><b>4 kỳ</b></div>
+            <div class="bar"><span>Văn – Thể</span><span class="t"><i style="width:100%"></i></span><b>6 kỳ</b></div>
+          </div></div>
+        <div class="card"><h4>Quy mô quản lý</h4><span class="bn">12.000+ <small>sinh viên/năm</small></span><p style="font-size:.86rem">~3 lớp kỹ năng / webinar mỗi năm</p></div>
+      </div>
+      <div class="tr">
+        <div class="row head"><span>Mảng</span><span>Nhiệm vụ</span><span></span><span>Kết quả</span></div>
+        <div class="row"><span class="area">🤝 Quan hệ doanh nghiệp</span><span class="task">Thiết lập hợp tác cung ứng nhân lực.</span><span class="arr">→</span><span class="res"><span class="hl">50+ doanh nghiệp</span>; góp phần <span class="hl">90%</span> sinh viên có việc làm.</span></div>
+        <div class="row"><span class="area">🎪 Sự kiện</span><span class="task">Lên ý tưởng &amp; tổ chức sự kiện toàn trường; điều hành Hội Sinh viên.</span><span class="arr">→</span><span class="res">6 Job Fair, 4 Ngày hội Sinh viên, 6 Đại hội Văn – Thể, mỗi kỳ <span class="hl">10.000+ người</span>.</span></div>
+        <div class="row"><span class="area">📚 Đào tạo kỹ năng</span><span class="task">Thiết kế &amp; dạy Giao tiếp, Quản lý thời gian, Viết CV &amp; Phỏng vấn.</span><span class="arr">→</span><span class="res">~3 lớp / webinar mỗi năm.</span></div>
+        <div class="row"><span class="area">🗂️ Quản lý sinh viên</span><span class="task">Quản lý dữ liệu, thủ tục, hệ thống.</span><span class="arr">→</span><span class="res"><span class="hl">12.000+</span> sinh viên/năm.</span></div>
+      </div>
+    </div>
+  </details>
+</div></details></section>
+
+<!-- 04 · PROJECTS -->
+<section id="du-an"><details class="sec">
+  <summary class="sh"><span class="no">04</span><h2>Dự án cá nhân</h2><span class="tog"><span class="pm" aria-hidden="true"></span><small class="hint">Click để xem</small></span></summary>
+  <div class="secbody">
+  <details class="co feat">
+    <summary>
+      <span class="mark" aria-hidden="true">🧭</span>
+      <span class="who"><span class="co-badge">Tư vấn doanh nghiệp</span><span class="when">09/2026 – nay · Cố vấn Talent Acquisition</span><h3>Chuỗi bán lẻ thời trang 40+ cửa hàng</h3><span>Tên khách hàng được bảo mật</span></span>
+      <span class="pm" aria-hidden="true"></span>
+    </summary>
+    <div class="body">
+      <div class="viz wide">
+        <div class="card"><h4>Nội dung chương trình nâng cấp từ Recruiter thành Talent Acquisition</h4>
+          <ol class="mods">
+            <li>Kỹ năng phân tích &amp; xử lý nhu cầu tuyển dụng (chân dung ứng viên)</li>
+            <li>Thiết kế mô tả công việc (JD &amp; Job Posting) theo từng chân dung</li>
+            <li>Quy hoạch &amp; lựa chọn nguồn tuyển dụng; xây dựng Talent Pool &amp; tuyển dụng chủ động</li>
+            <li>Xây dựng Scorecard &amp; kỹ năng sàng lọc hồ sơ</li>
+            <li>Thiết kế quy trình tuyển dụng &amp; trải nghiệm ứng viên</li>
+            <li>Kỹ thuật phỏng vấn &amp; đánh giá ứng viên</li>
+            <li>Offer &amp; Onboarding</li>
+            <li>Đo lường &amp; báo cáo tuyển dụng</li>
+          </ol></div>
+        <div class="card"><h4>Hỗ trợ CEO</h4>
+          <div class="chips"><span class="r">KPIs cho team TA</span><span class="r">Tự động hoá tuyển dụng</span><span class="r">Web app Talent Portal</span></div>
+          <p style="font-size:.86rem">Quy trình chạy tự động, đo lường &amp; đánh giá định kỳ.</p></div>
+      </div>
+      <div class="tr">
+        <div class="row head"><span>Mảng</span><span>Nhiệm vụ</span><span></span><span>Kết quả</span></div>
+        <div class="row"><span class="area">🔍 Chẩn đoán</span><span class="task">Khảo sát quy trình, dữ liệu; phỏng vấn &amp; đánh giá năng lực 1-1 đội Tuyển dụng 4 người.</span><span class="arr">→</span><span class="res">Chỉ ra chỉ số "thời gian tuyển" <span class="hl">đẹp nhưng che phần lớn vị trí không tuyển được</span>; tìm ra khoảng trống về năng lực, tư duy &amp; hệ thống chưa chuẩn hoá.</span></div>
+        <div class="row"><span class="area">📚 Đào tạo</span><span class="task">Thiết kế giáo trình, đứng lớp chương trình nâng cấp từ Recruiter thành Talent Acquisition.</span><span class="arr">→</span><span class="res"><span class="hl">4/4</span> học viên đạt nghiệm thu; điểm áp dụng 63 → 95/100.</span></div>
+        <div class="row"><span class="area">🛠️ Sản phẩm của Team TA</span><span class="task">Kèm team vừa học vừa làm ra công cụ dùng ngay.</span><span class="arr">→</span><span class="res"><span class="hl">3</span> bộ tiêu chí đánh giá ứng viên, <span class="hl">4</span> cẩm nang sơ vấn 1 trang, <span class="hl">8</span> công cụ AI.</span></div>
+        <div class="row"><span class="area">🤖 Hỗ trợ CEO</span><span class="task">Thiết lập KPIs cho team TA, tự động hoá hệ thống tuyển dụng, thiết kế &amp; xây web app Talent Portal.</span><span class="arr">→</span><span class="res">Quy trình tự chạy, đo lường &amp; đánh giá định kỳ.</span></div>
+      </div>
+    </div>
+  </details>
+
+  <div class="mini">
+    <article><div class="pic logo"><img src="assets/logo-aplus.png" alt="Logo A Plus"></div><div class="txt"><span class="when">2024 – 2025</span><h3>Cố vấn Nhân sự · CTCP Khoáng sản Vật liệu Á Cộng</h3><p>Quy trình tuyển dụng, giải pháp tìm &amp; phát triển đội ngũ, thương hiệu tuyển dụng.</p></div></article>
+    <article><div class="pic logo"><img src="assets/logo-hrdigest.jpg" alt="Logo HR Digest"></div><div class="txt"><span class="when">2022 – 2025</span><h3>Advisor · HR Digest</h3><p>Dịch thuật, biên tập ấn phẩm chuyên ngành; diễn giả workshop, talkshow, webinar.</p></div></article>
+    <article><div class="pic"><img src="assets/vnw-poster.jpg" alt="Poster khoá học e-learning về Luật Lao động trên Vietnamworks" style="object-position:50% 78%"></div><div class="txt"><span class="when">Vietnamworks</span><h3>Career Coach &amp; tác giả · Trạm Sạc Empower Growth</h3><p>Khoá học &amp; e-document "Từ A–Z: Hiểu về luật lao động và quyền lợi cơ bản dành cho người đi làm".</p></div></article>
+    <article><div class="pic"><img src="assets/nexgen.jpg" alt="Banner webinar GPS định vị lối đi, The NEXGen 2024"></div><div class="txt"><span class="when">2024</span><h3>Mentor · The NEXGen 2024</h3><p>Cố vấn Top 35 tài năng trẻ; diễn giả webinar "GPS định vị lối đi cho người mới bắt đầu".</p></div></article>
+    <article><div class="pic"><img src="assets/speaker-workshop.jpg" alt="Buổi workshop cùng các bạn trẻ"></div><div class="txt"><span class="when">Diễn giả</span><h3>Workshop "Trải nghiệm ngành nghề HR"</h3><p>CLB Nhân Sự Trẻ, ĐH Mở · Webinar CareerViet, HR Companion, HR Digest.</p></div></article>
+    <article><div class="pic"><img src="assets/speaker-stage.jpg" alt="Diễn giả và khách mời trên sân khấu talkshow"></div><div class="txt"><span class="when">Diễn giả</span><h3>Talkshow "Đi Làm Không Shy"</h3><p>Chia sẻ nghề cùng sinh viên UEH.</p></div></article>
+  </div>
+</div></details></section>
+
+<!-- 05 · VALUE -->
+<section id="dong-hanh"><details class="sec">
+  <summary class="sh"><span class="no">05</span><h2>Đồng hành &amp; gỡ rối doanh nghiệp</h2><span class="tog"><span class="pm" aria-hidden="true"></span><small class="hint">Click để xem</small></span></summary>
+  <div class="secbody">  <div class="val">
+    <div><span class="em" aria-hidden="true">🔍</span><b>Chẩn đoán vấn đề Nhân sự &amp; Tuyển dụng của doanh nghiệp</b></div>
+    <div><span class="em" aria-hidden="true">📈</span><b>Nâng năng lực đội Tuyển dụng theo chuẩn Talent Acquisition</b><span class="note" style="font-size:.84rem;color:var(--muted)">Training · Mentoring · Coaching</span></div>
+    <div><span class="em" aria-hidden="true">🤝</span><b>Coaching 1-1 cho HR lead / TA</b></div>
+    <div><span class="em" aria-hidden="true">🤖</span><b>Đưa AI &amp; Automation vào vận hành Nhân sự</b></div>
+  </div>
+  <div class="steps" aria-label="4 bước đồng hành"><span>1 · Chẩn đoán</span><i>→</i><span>2 · Thiết kế giải pháp</span><i>→</i><span>3 · Đào tạo, kèm cặp</span><i>→</i><span>4 · Bàn giao kèm công cụ AI</span></div>
+  <p class="goal">Đích đến: <span>hệ thống chạy được, không lệ thuộc vào con người.</span></p>
+</div></details></section>
+
+<!-- HÌNH ẢNH -->
+<section id="hinh-anh"><details class="sec">
+  <summary class="sh"><span class="no">06</span><h2>Hình ảnh hoạt động</h2><span class="tog"><span class="pm" aria-hidden="true"></span><small class="hint">Click để xem</small></span></summary>
+  <div class="secbody">  <div class="gal">
+    <figure class="big"><img src="assets/g-speaker4.jpg" alt="Quyên cầm micro phát biểu trong hội trường" style="object-position:50% 30%"></figure>
+    <figure><img src="assets/g-ws3.jpg" alt="Quyên cùng sinh viên trong buổi workshop"></figure>
+    <figure><img src="assets/g-ws5.jpg" alt="Học viên workshop chụp ảnh cùng nhau"></figure>
+    <figure><img src="assets/g-ws4.jpg" alt="Học viên làm bài tập nhóm trong workshop"></figure>
+    <figure><img src="assets/hrdigest-poster.jpg" alt="Poster FlipTalk 2025 HR &amp; Supply Chain, Quyên Lê là host" style="object-position:50% 30%"></figure>
+  </div>
+  <div class="label" style="margin-top:36px">Đơn vị đã làm việc &amp; đồng hành</div>
+  <div class="lstrip">
+    <div><img src="assets/logo-pati.png" alt="PATI Group"></div>
+    <div><img src="assets/logo-haitrieu.png" alt="Đồng Hồ Hải Triều"></div>
+    <div><img src="assets/logo-datxanh.png" alt="Đất Xanh Miền Nam"></div>
+    <div><img src="assets/logo-agu.png" alt="Trường Đại học An Giang"></div>
+    <div><img src="assets/logo-aplus.png" alt="A Plus, Khoáng sản Vật liệu Á Cộng"></div>
+    <div><img src="assets/logo-hrdigest.jpg" alt="HR Digest"></div>
+    <div class="more" title="Và các đơn vị khác"><span aria-hidden="true">+</span><span class="sr" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Và các đơn vị khác</span></div>
+  </div>
+</div></details></section>
+
+<div class="contact" id="lien-he">
+  <span class="label" style="color:var(--red)">Liên hệ</span>
+  <h2>Kết nối với <span>Quyên</span></h2>
+  <div class="cc">
+    <div><small>Email</small><span class="v" id="v-mail">quyenlp1106@gmail.com</span><button class="copy" type="button" data-copy="v-mail">Sao chép</button></div>
+    <div><small>LinkedIn</small><span class="v"><a href="https://www.linkedin.com/in/le-quyen-hr/" target="_blank" rel="noopener">linkedin.com/in/le-quyen-hr</a></span></div>
+  </div>
+</div>
+<footer>Lê Phương Quyên · Tư vấn Tổ chức &amp; Nhân sự · TP. Hồ Chí Minh</footer>
+</div>
+
+<script>
+document.querySelectorAll('.copy').forEach(function(b){
+  b.addEventListener('click',function(){
+    var el=document.getElementById(b.dataset.copy),t=el.textContent.trim();
+    function done(){b.textContent='Đã sao chép';setTimeout(function(){b.textContent='Sao chép'},1600)}
+    function fb(){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Đã chọn, nhấn Cmd/Ctrl+C'}
+    try{navigator.clipboard.writeText(t).then(done,fb)}catch(e){fb()}
+  });
+});
+var navLinks=[].slice.call(document.querySelectorAll('.top nav a'));
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){navLinks.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)})}})},{rootMargin:'-45% 0px -50% 0px'});
+document.querySelectorAll('section[id],.contact[id]').forEach(function(x){io.observe(x)})}
+document.querySelectorAll('details.sec').forEach(function(d){var h=d.querySelector('.hint');function u(){h.textContent=d.open?'Click để thu gọn':'Click để xem'}d.addEventListener('toggle',u);u()});
+function openHash(id){var t=document.getElementById(id);if(t){var d=t.querySelector('details.sec');if(d&&!d.open)d.open=true}}
+document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(){openHash(a.getAttribute('href').slice(1))})});
+if(location.hash)openHash(location.hash.slice(1));
+function setAll(v){document.querySelectorAll('details.co').forEach(function(d){d.open=v})}
+document.getElementById('openAll').addEventListener('click',function(){setAll(true)});
+document.getElementById('closeAll').addEventListener('click',function(){setAll(false)});
+</script>
